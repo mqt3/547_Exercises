@@ -6,6 +6,6 @@ import pytest
     ((3, 5), (5, 10), 9, 20),
     ((1.2, 5.25), (2.6, -5.75), 1.9, -0.25)])
 def test_on_line(point1, point2, x, expected):
-    from line import test_on_Line
+    from line import on_line
     result = on_line(point1, point2, x)
     assert result == expected
